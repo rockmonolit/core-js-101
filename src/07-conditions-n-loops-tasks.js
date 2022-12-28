@@ -209,7 +209,6 @@ function findFirstSingleChar(str) {
   return result[0];
 }
 
-
 /**
  * Returns the string representation of math interval,
  * specified by two points and include / exclude flags.
