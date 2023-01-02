@@ -305,9 +305,9 @@ function isCreditCardNumber(ccn) {
   let sum = 0;
   const cnnArray = Array.from(String(ccn), Number);
   for (let i = cnnArray.length - 1; i >= 0; i -= 1) {
-      if ((i + 1) % 2 === cnnArray.length % 2) sum += cnnArray[i];
-      else if (cnnArray[i] > 4) sum += 2 * cnnArray[i] - 9;
-      else sum += 2 * cnnArray[i];
+    if ((i + 1) % 2 === cnnArray.length % 2) sum += cnnArray[i];
+    else if (cnnArray[i] > 4) sum += 2 * cnnArray[i] - 9;
+    else sum += 2 * cnnArray[i];
   }
   return sum % 10 === 0;
 }
